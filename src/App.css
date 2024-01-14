@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+@media screen and (max-width: 576px) {
+  .banner {
+    height: auto;
+    padding: 80px 5%;
+  }
+  .title, .project-info h2, .banner .title {
+    font-size: 32px;
+  }
+  .about {
+    padding: 0 5%;
+  }
+  .about-img,
+  .about-content {
+    width: 100%;
+  }
+  .thumbnail {
+    margin-top: 80px;
+  }
+  .about-content {
+    margin-top: 36px;
+  }
+
+
+  /* projects section */
+  .projects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-overlay{
+    height: 500px;
+  }
+  .card-image img{
+    height: 500px;
+  }
+
+  /* contact section */
+  .contact-container{
+    flex-direction: column-reverse;
+    padding: 50px 5%;
+  }
+  .contact-img, .contact-info{
+    width: 100%;
+  }
+
+  /* footer section */
+  footer{
+    flex-direction: column;
+    padding: 20px;
+  }
+  footer > div{
+    width: 100%;
+  }
+  .social-icons{
+    margin-bottom: 25px;
+    display: inline;
+    position: relative;
+    padding-right: 10px;
+  }
+  footer .text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* medium devices */
+@media screen and (min-width: 577px) and (max-width: 1024px){
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner{
+    height: 100vh;
+  }
+  .banner .title {
+    font-size: 52px;
+  }
+}

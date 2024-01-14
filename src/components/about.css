@@ -1,0 +1,117 @@
+/* about section */
+.about {
+  display: block;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 10%;
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-content .description {
+  font-weight: 300;
+  color: #717173;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+.about-img {
+  width: 38%;
+}
+
+.thumbnail {
+  margin-top: -89px;
+}
+
+.thumbnail img {
+  border-radius: 8px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+}
+
+.about-content {
+  margin-top: 130px;
+  width: 55%;
+}
+.section-title {
+  padding-left: 10px;
+}
+
+/* tab-area css  */
+.tabs-area {
+  margin-top: 30px;
+}
+
+.tab-style {
+  display: flex;
+  gap: 8px;
+  /* margin: 0 -20px; */
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.tab-style .tabs {
+  position: relative;
+  margin: 0 10px;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+
+ul.tab-style li:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  height: 2px;
+  bottom: 0;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: #f9004d;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* single tabs styling */
+.single-tab-content {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.single-tab-content ul li {
+  color: black;
+  font-size: 16px;
+  line-height: inherit;
+  margin-bottom: 15px;
+  font-weight: 300;
+  list-style: none;
+}
+
+.single-tab-content ul li a {
+  font-weight: 500;
+  display: block;
+  color: #a52a2a;
+  transition: all 0.4s ease-in-out 0s;
+  text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+   .about-content .description{
+      text-align: left;
+      white-space: inherit;
+      font-size: 20px;
+   }
+}

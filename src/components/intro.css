@@ -1,0 +1,61 @@
+/********Intro Css************/
+.bg_image2{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline;
+  width: 20rem;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.banner {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  height: 90vh;
+  padding: 0 10%;
+}
+
+
+.banner .title {
+  color: #1f1f25;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: capitalize;
+  width: 70%;
+  text-align-last: right;
+}
+
+.title span {
+  color: red;
+}
+
+@media (max-width: 800px) {
+   .bg_image2{
+    background-size: cover;
+    position: relative;
+    margin-top: 5px;
+    width: 10rem;
+    height: 50vh;
+   }
+   .banner{
+    display: inline;
+    margin: 10px;
+
+   }
+   .banner p{
+     font-size: 10px;
+   }
+   .banner .title {
+     font-size: 30px;
+     font-weight: 800;
+     padding: 40px;
+     padding-left: 10rem;
+     color: black;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     margin: 50px;
+   }
+}
